@@ -48,3 +48,7 @@ class Wave{
         endShape();
     }
 }
+
+function windowResized(){
+    setup();
+}

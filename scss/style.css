@@ -1049,6 +1049,21 @@ body {
   background: linear-gradient(-20deg, #0067A1 0%, #01A6DE 35%, #6DCFF4 87%, #B1D8E7 100%);
 }
 
+img.logo {
+  margin-bottom: 2em;
+  clip-path: url(img/logo-suelar-w.svg);
+}
+
+img.store-btn {
+  max-width: 100%;
+  margin-top: 8.4em;
+}
+
+p.big {
+  font-size: 1.5em;
+  text-shadow: 2px 2px 1px rgba(1, 50, 118, 0.5);
+}
+
 .h2 {
   background-image: url("img/logo-suelar-w.svg");
   width: 500px;
@@ -1067,9 +1082,12 @@ input[type=checkbox] {
   margin-bottom: 0;
 }
 
-#page {
-  width: 100vw;
+body {
   min-height: 100vh;
+  width: 100%;
+}
+
+#main {
   padding-top: 10rem;
 }
 
