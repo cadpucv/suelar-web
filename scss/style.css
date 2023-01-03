@@ -1067,7 +1067,8 @@ input[type=checkbox] {
   margin-bottom: 0;
 }
 
-#main {
+#page {
+  width: 100vw;
   min-height: 100vh;
   padding-top: 10rem;
 }

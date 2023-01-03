@@ -1,10 +1,10 @@
-let fondo;
-
-
-let w;
+let fondo; // sketch
+let w;     // waves
+let page;
 
 function setup(){
-    fondo = createCanvas(windowWidth, windowHeight);
+    page = document.getElementById('page');
+    fondo = createCanvas(windowWidth, page.offsetHeight);
     fondo.position(0, 0);
     fondo.style('z-index', -1);
     w = [];
@@ -13,7 +13,6 @@ function setup(){
     w[2] = new Wave(height * .85, 160, 75, "#0067A1");
 }
 
-
 function draw(){
     clear();
     stroke(255, 90);
@@ -21,7 +20,6 @@ function draw(){
     
     for(let wave of w){
         wave.draw();
-       // wave.per = mouseX/width * wave.z * wave.per;
     }
 }
 
