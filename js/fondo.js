@@ -8,14 +8,8 @@ function setup(){
     fondo.position(0, 0);
     fondo.style('z-index', -1);
     w = [];
-    /*
-    for(let i = 0; i < 3; i++){
-
-    }
-    */
-
-    w[0] = new Wave(height * .65, 60, 25, "#6DCFF4");
-    w[1] = new Wave(height * .72, 100, 50, "#01A6DE");
+    w[0] = new Wave(height * .70, 50, 25, "#6DCFF4");
+    w[1] = new Wave(height * .75, 100, 50, "#01A6DE");
     w[2] = new Wave(height * .85, 160, 75, "#0067A1");
 }
 
@@ -48,7 +42,7 @@ class Wave{
         fill(this.col);
         beginShape();
         for(let x = 0; x < width; x += res){
-            let y = yoff + this.y + sin(xoff/100 + (millis()/(this.y/100) + x)/this.per) * this.amp;
+            let y = yoff + this.y + sin(xoff/100 + (millis()/(this.y/50) + x)/this.per) * this.amp;
             vertex(x, y);
         }
         vertex(width, height);
