@@ -1,0 +1,318 @@
+/*
+*
+*  Sitio de Francisco Méndez Labbe
+*  Diseño: Herbert Spencer González
+*
+*/
+
+
+$max-width: 72rem;
+$page-padding: 3rem;
+$nav-block-size: 20px;
+$color-blue: #0067A1;
+$color-dark: #013276;
+$color-white: #f3fffd;
+
+@import "normalize";
+@import "skeleton";
+@import "menu";
+
+body{
+    background: linear-gradient(-20deg, #0067A1 0%, #01A6DE 35%, #6DCFF4 87%, #B1D8E7 100%);
+}
+.h2 {
+    background-image: url('img/logo-suelar-w.svg');
+    width: 500px;
+    height: 200px;
+    span{
+        display: none;
+    }
+}
+
+input[type="checkbox"] {
+    position: relative;
+    width: 1em;
+    height: 1em;
+    mix-blend-mode: multiply;
+    vertical-align: -.69ex;
+    margin-bottom: 0;
+}
+
+#main {
+    min-height: 100vh;
+    padding-top: 10rem;
+}
+
+/* párrafo selector con los checkboxes para filtrar */
+.selector {
+    display: block;
+    position: relative;
+    font-size: 90%;
+
+    div {
+        display: inline-block;
+        margin-right: 1ex;
+
+        label {
+            font-weight: normal;
+            z-index: 10000;
+
+            input[type="checkbox"] {
+                position: relative;
+                width: 1em;
+                height: 1em;
+                vertical-align: -2px;
+                margin-right: 1ex;
+            }
+
+            span {
+                &::before {
+                    display: inline-block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 25px;
+                    width: 25px;
+                    background-color: #eee;
+                    border-radius: 4px
+                }
+            }
+        }
+    }
+}
+
+#text {
+    position: relative;
+}
+
+#content {
+    margin-top: 0;
+}
+
+#p5 {
+    position: relative;
+}
+
+.vid-overlay {
+    position: absolute;
+    display: inline-block;
+    width: 210%;
+    z-index: 20000;
+    text-align: center;
+    opacity: .9;
+}
+
+.vid-footer {
+    h5 {
+        font-weight: 600;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        margin: 460px 0 0 0;
+    }
+
+    p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        strong {
+            font-weight: 600;
+        }
+    }
+}
+
+.img-overlay {
+    opacity: .95;
+    // max-height: 60vh;
+
+    img {
+        border: 7px solid #FFF3;
+        border-radius: 7px;
+        max-height: 75vh;
+        filter: invert(0%);
+        transition: ease all 1s;
+
+        &:hover {
+            z-index: 20000;
+        }
+    }
+}
+
+.img-footer {
+    h5 {
+        font-weight: 600;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        margin: 1rem 0 0 0;
+    }
+
+    p {
+        strong {
+            font-weight: 600;
+        }
+    }
+}
+
+
+button.close {
+    position: fixed;
+    z-index: 10100;
+    top: .2em; // 2.75ex;
+    margin-left: -2ex;
+    color: $color-white;
+    font-size: 32px;
+    width: 32px;
+    height: 30px;
+    border: none;
+    border-radius: 0 !important;
+    padding: 0;
+    line-height: 0;
+
+
+    span {
+        display: none;
+    }
+
+    &:hover {
+        background-color: $color-white;
+
+        &::before {
+            color: $color-blue;
+        }
+    }
+
+    &::before {
+        font-family: "Futura PT", "Futura", "Century Gothic", sans-serif;
+        display: block;
+        color: $color-white;
+        font-weight: 100;
+        font-size: 1.62em;
+        content: "+";
+        margin-left: 0;
+        transform: rotate(45deg);
+    }
+}
+
+@media (min-width: 550px) {
+    // .img-overlay{left: -25vw;}
+}
+
+.vp-preview {
+    position: relative;
+    top: 25%;
+    left: 0;
+}
+
+#p5_loading {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        color: #FFF4;
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        display: inline-block;
+    }
+}
+
+.row {
+    position: relative;
+
+    .column {
+        position: relative;
+    }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+/*
+@media (min-width: 550px) {
+
+}
+*/
+
+
+// animation
+
+.heartbeat {
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
