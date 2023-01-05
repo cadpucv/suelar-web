@@ -4,18 +4,17 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
 */
 
 .menu-wrap {
-
     position: absolute;
     z-index: 10000;
     width: 100%;
 
     .toggler {
-        z-index: 21;
+        z-index: 100;
         position: absolute;
         // top: 0;
         // left: 0;
-        width: $nav-block-size * 2;
-        height: $nav-block-size * 2;
+        width: $nav-block-size;
+        height: $nav-block-size;
         border: 0;
         opacity: 0;
 
@@ -38,6 +37,11 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
                     &:after {
                         top: 0;
                         transform: rotate(-90deg);
+                        box-shadow: $shadow-r;
+                    }
+
+                    &:before{
+                        box-shadow: none;
                     }
                 }
             }
@@ -81,53 +85,61 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
             align-items: center;
             justify-content: center;
             transition: all 0.4s ease;
+            box-shadow: $shadow;
 
             &:before,
             &:after {
                 content: '';
                 position: absolute;
-                top: -7px;
+                top: -$nav-block-size/3;
                 width: 100%;
                 height: 2px;
                 background: inherit;
+                box-shadow: $shadow;
             }
 
             &:after {
-                top: 7px;
+                top: $nav-block-size/3;
             }
         }
     }
 
     .menu {
+        transition: all 0.4s ease;
         position: relative;
-        width: 100%;
-        padding: .55em 0 0.3em 3em;
+        padding: .5em 0 0.3em 3em;
+        font-size: 1.4em;
         visibility: hidden;
         opacity: 0;
-        background-color: transparent;
+        background-color: $color-dark;
 
         nav {
             width: 100%;
             &#main-nav {
+                position: relative;
                 transform: translateY(-200px);
-                display: flex;
-                justify-content: space-evenly;
+                display: block;
 
                 li {
                     list-style-type: none;
+                    margin-left: 25%;
 
                     a {
-                        position: relative;
+                        //position: relative;
                         text-transform: uppercase;
                         text-decoration: none;
-                        color: $color-dark;
+                        color: $color-white;
+                        text-shadow: $shadow;
                         font-weight: 600;
                         display: inline-block;
-                        transition: all .5s ease;
+                        padding: 0.5ex 1em;
+                        border: 2px solid white;
+                        border-radius: 3ex;
 
                         &:hover {
-                            color: $color-white;
+                            color: $color-dark;
                             text-shadow: none;
+                            background-color: white;
                         }
                     }
                 }
