@@ -5,7 +5,6 @@
 *
 */
 
-
 $max-width: 72rem;
 $page-padding: 3rem;
 $nav-block-size: 40px;
@@ -21,6 +20,7 @@ $shadow-r: -2px 2px 2px rgba(1, 49, 117, 0.352);
 @import "menu";
 
 body {
+    text-shadow: $shadow;
     background: linear-gradient(-20deg, #0067A1 0%, #01A6DE 35%, #6DCFF4 87%, #B1D8E7 100%);
 }
 
@@ -33,9 +33,13 @@ img.store-btn {
     max-width: 70%;
 }
 
-p.big {
-    font-size: 1.5em;
-    text-shadow: $shadow;
+img.logo-pucv{
+    display: inline-block;
+    width: 35%;
+}
+
+li{
+    margin: 0 0 0 1.8em;
 }
 
 .h2 {
@@ -72,7 +76,6 @@ object {
         filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
     }
 }
-
 
 .right {
     margin-top: 13rem;

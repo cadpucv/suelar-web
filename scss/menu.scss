@@ -19,7 +19,6 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
         opacity: 0;
 
         &:checked {
-
             /* rotate on hover */
             &:hover+.hamburger>div {
                 transform: rotate(45deg);
@@ -111,7 +110,7 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
         font-size: 1.4em;
         visibility: hidden;
         opacity: 0;
-        background-color: $color-dark;
+        background-color: transparentize($color-dark, .3);
 
         nav {
             width: 100%;
@@ -121,8 +120,9 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
                 display: block;
 
                 li {
+                    font-size: 85%;
                     list-style-type: none;
-                    margin-left: 25%;
+                    margin: 0 0 1em 20%;
 
                     a {
                         //position: relative;
