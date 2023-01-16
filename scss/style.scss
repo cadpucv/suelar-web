@@ -35,11 +35,29 @@ img.store-btn {
 
 img.logo-pucv{
     display: inline-block;
-    width: 35%;
+    width: 30%;
+    margin: 2em 0;
 }
 
 li{
     margin: 0 0 0 1.8em;
+}
+
+a.btn{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-white;
+    background-color: transparent;
+    text-shadow: $shadow;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.5ex 1em;
+    border: 2px solid white;
+    border-radius: 3ex;
+    &:hover{
+        background-color: $color-dark;
+    }
 }
 
 .h2 {
