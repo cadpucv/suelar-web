@@ -35,14 +35,14 @@ img.store-btn {
 
 img.logo-pucv{
     display: inline-block;
-    width: 30%;
+    width: 50%;
     margin: 2em 0;
 }
 
 img.logo-puerto{
     display: inline-block;
-    width: 70%;
-    margin: 6em 0;
+    width: 90%;
+    margin: 4em 0;
 }
 
 li{
@@ -142,5 +142,8 @@ object {
 @media (min-width: 550px) {
     .right{
         margin-top: 32rem;
+    }
+    img.logo-puerto{
+        margin: 11em 0;
     }
 }
