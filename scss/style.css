@@ -1086,16 +1086,16 @@ a.btn {
   text-transform: uppercase;
   text-decoration: none;
   color: #f3fffd;
-  background-color: transparent;
+  background-color: #013276;
+  border: 2px solid transparent;
   text-shadow: 2px 2px 2px rgba(1, 49, 117, 0.352);
   font-weight: 600;
   display: inline-block;
   padding: 0.5ex 1em;
-  border: 2px solid white;
   border-radius: 3ex;
 }
 a.btn:hover {
-  background-color: #013276;
+  border: 2px solid white;
 }
 
 .h2 {
