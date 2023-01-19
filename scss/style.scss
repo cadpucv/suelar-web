@@ -39,6 +39,12 @@ img.logo-pucv{
     margin: 2em 0;
 }
 
+img.logo-puerto{
+    display: inline-block;
+    width: 70%;
+    margin: 6em 0;
+}
+
 li{
     margin: 0 0 0 1.8em;
 }
@@ -107,6 +113,7 @@ object {
     padding-top: 10rem;
 }
 
+
 /* párrafo selector con los checkboxes para filtrar */
 .selector {
     display: block;
@@ -142,5 +149,11 @@ object {
                 }
             }
         }
+    }
+}
+
+@media (min-width: 550px) {
+    .right{
+        margin-top: 32rem;
     }
 }
