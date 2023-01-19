@@ -76,15 +76,6 @@ a.btn{
     }
 }
 
-input[type="checkbox"] {
-    position: relative;
-    width: 1em;
-    height: 1em;
-    mix-blend-mode: multiply;
-    vertical-align: -.69ex;
-    margin-bottom: 0;
-}
-
 body {
     min-height: 100vh;
     width: 100%;
@@ -99,10 +90,6 @@ object {
     svg {
         filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
     }
-}
-
-.right {
-    margin-top: 13rem;
 }
 
 .center {
