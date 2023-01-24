@@ -12,8 +12,8 @@ $color-blue: #0067A1;
 $color-dark: #013276;
 $color-white: #f3fffd;
 
-$shadow: 2px 2px 2px rgba(1, 49, 117, 0.352);
-$shadow-r: -2px 2px 2px rgba(1, 49, 117, 0.352);
+$shadow: 2px 2px 1px rgba(1, 49, 117, 0.5352);
+$shadow-r: -2px 2px 1px rgba(1, 49, 117, 0.5352);
 
 @import "normalize";
 @import "skeleton";
@@ -33,22 +33,28 @@ img.store-btn {
     max-width: 70%;
 }
 
-img.logo-pucv{
+.logo-pucv{
     display: inline-block;
     width: 50%;
     margin: 2em 0;
 }
 
-img.logo-puerto{
+.logo-epv{
     display: inline-block;
     width: 90%;
     margin: 4em 0;
 }
 
-img.logo-stl{
+.logo-stl{
     display: inline-block;
     width: 70%;
     margin: 0;
+}
+
+.logo-cad{
+    margin: 2em 0 0 0;
+    width: 95%;
+    height: auto;
 }
 
 li{
@@ -109,12 +115,11 @@ body {
 object {
     width: 100%;
     margin-bottom: 2em;
-    // filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-
-
+    filter: drop-shadow(3px 5px 2px rgba(1, 49, 117, 0.5352));
+    /*
     svg {
         filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-    }
+    }*/
 }
 
 .center {

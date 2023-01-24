@@ -560,7 +560,7 @@ html {
   font-size: 62.5%;
 } /* 62.5% */
 body {
-  font-size: 1.8em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 1.7em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
   font-family: "Sen", "Futura PT", "Futura", "Century Gothic", sans-serif;
@@ -577,31 +577,31 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.6 0rem;
   line-height: 1.2;
   letter-spacing: 0.31rem;
 }
 
 h2 {
-  font-size: 3.6rem;
+  font-size: 3rem;
   line-height: 1.25;
   letter-spacing: -0.1rem;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2.4rem;
   line-height: 1.3;
   letter-spacing: -0.1rem;
 }
 
 h4 {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   line-height: 1.35;
   letter-spacing: -0.08rem;
 }
 
 h5 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   letter-spacing: -0.05rem;
 }
@@ -613,26 +613,16 @@ h6 {
 }
 
 /* Larger than phablet */
+/*
 @media (min-width: 550px) {
-  h1 {
-    font-size: 5rem;
-  }
-  h2 {
-    font-size: 4.2rem;
-  }
-  h3 {
-    font-size: 3.6rem;
-  }
-  h4 {
-    font-size: 3rem;
-  }
-  h5 {
-    font-size: 2.4rem;
-  }
-  h6 {
-    font-size: 1.5rem;
-  }
+  h1 { font-size: 5.0rem; }
+  h2 { font-size: 4.2rem; }
+  h3 { font-size: 3.6rem; }
+  h4 { font-size: 3.0rem; }
+  h5 { font-size: 2.4rem; }
+  h6 { font-size: 1.5rem; }
 }
+*/
 li,
 p {
   margin-top: 0;
@@ -967,7 +957,7 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
 .menu-wrap .toggler:checked + .hamburger > div:before, .menu-wrap .toggler:checked + .hamburger > div:after {
   top: 0;
   transform: rotate(-90deg);
-  box-shadow: -2px 2px 2px rgba(1, 49, 117, 0.352);
+  box-shadow: -2px 2px 1px rgba(1, 49, 117, 0.5352);
 }
 .menu-wrap .toggler:checked + .hamburger > div:before {
   box-shadow: none;
@@ -1004,7 +994,7 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
   align-items: center;
   justify-content: center;
   transition: all 0.4s ease;
-  box-shadow: 2px 2px 2px rgba(1, 49, 117, 0.352);
+  box-shadow: 2px 2px 1px rgba(1, 49, 117, 0.5352);
 }
 .menu-wrap .hamburger > div:before, .menu-wrap .hamburger > div:after {
   content: "";
@@ -1013,7 +1003,7 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
   width: 100%;
   height: 2px;
   background: inherit;
-  box-shadow: 2px 2px 2px rgba(1, 49, 117, 0.352);
+  box-shadow: 2px 2px 1px rgba(1, 49, 117, 0.5352);
 }
 .menu-wrap .hamburger > div:after {
   top: 13.3333333333px;
@@ -1044,7 +1034,7 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
   text-transform: uppercase;
   text-decoration: none;
   color: #f3fffd;
-  text-shadow: 2px 2px 2px rgba(1, 49, 117, 0.352);
+  text-shadow: 2px 2px 1px rgba(1, 49, 117, 0.5352);
   font-weight: 600;
   display: inline-block;
   padding: 0.5ex 1em;
@@ -1058,7 +1048,7 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
 }
 
 body {
-  text-shadow: 2px 2px 2px rgba(1, 49, 117, 0.352);
+  text-shadow: 2px 2px 1px rgba(1, 49, 117, 0.5352);
   background: linear-gradient(-20deg, #0067A1 0%, #01A6DE 35%, #6DCFF4 87%, #B1D8E7 100%);
 }
 
@@ -1071,16 +1061,28 @@ img.store-btn {
   max-width: 70%;
 }
 
-img.logo-pucv {
+.logo-pucv {
   display: inline-block;
   width: 50%;
   margin: 2em 0;
 }
 
-img.logo-puerto {
+.logo-epv {
   display: inline-block;
   width: 90%;
   margin: 4em 0;
+}
+
+.logo-stl {
+  display: inline-block;
+  width: 70%;
+  margin: 0;
+}
+
+.logo-cad {
+  margin: 2em 0 0 0;
+  width: 95%;
+  height: auto;
 }
 
 li {
@@ -1094,7 +1096,7 @@ a.btn {
   color: #f3fffd;
   background-color: #013276;
   border: 2px solid transparent;
-  text-shadow: 2px 2px 2px rgba(1, 49, 117, 0.352);
+  text-shadow: 2px 2px 1px rgba(1, 49, 117, 0.5352);
   font-weight: 600;
   display: inline-block;
   padding: 0.5ex 1em;
@@ -1135,9 +1137,11 @@ body {
 object {
   width: 100%;
   margin-bottom: 2em;
-}
-object svg {
-  filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(3px 5px 2px rgba(1, 49, 117, 0.5352));
+  /*
+  svg {
+      filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }*/
 }
 
 .center {
