@@ -57,6 +57,20 @@ img.store-btn {
     height: auto;
 }
 
+.sponsors{
+    display: flex;
+    align-items: center;
+}
+
+.activador{
+    display: inline-block;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 1em 0;
+    box-shadow: $shadow;
+}
+
 li{
     margin: 0 0 0 1.8em;
 }
