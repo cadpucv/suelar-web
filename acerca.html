@@ -1,113 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-
-  <!-- Basic Page Needs
+  <head>
+    <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>SuelaAR</title>
-  <meta name="description"
-    content="">
-  <meta name="author"
-    content="CAD - Centro de Artes Digitales PUCV">
+    <meta charset="utf-8" />
+    <title>SuelaAR</title>
+    <meta name="description" content="" />
+    <meta name="author" content="CAD - Centro de Artes Digitales PUCV" />
 
-  <!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- FONT (Adobe Futura)
+    <!-- FONT (Adobe Futura)
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="preconnect"
-    href="https://fonts.googleapis.com">
-  <link rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- CSS
+    <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet"
-    href="scss/style.css">
+    <link rel="stylesheet" href="scss/style.css" />
 
-  <!-- Favicon
+    <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon"
-    type="image/png"
-    href="img/favicon.png">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
 
-  <!-- Scripts
+    <!-- Scripts
    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="js/p5.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script> -->
-  <script src="js/fondo.js"></script>
+    <script src="js/p5.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script> -->
+    <script src="js/fondo.js"></script>
+  </head>
 
-</head>
-
-<body id="page">
-
-  <div class="menu-wrap">
-    <input type="checkbox"
-      class="toggler">
-    <div class="hamburger">
-      <div></div>
+  <body id="page">
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler" />
+      <div class="hamburger">
+        <div></div>
+      </div>
+      <section class="menu">
+        <nav id="main-nav">
+          <li><a href="index.html">SuelAR</a></li>
+          <li><a id="acerca-btn" href="ecosistema.html">Ecosistema</a></li>
+          <li><a id="contacto-btn" href="acerca.html">Acerca</a></li>
+        </nav>
+      </section>
     </div>
-    <section class="menu">
-      <nav id="main-nav">
-        <li><a href="index.html">SuelAR</a></li>
-        <li><a id="acerca-btn" href="ecosistema.html">Ecosistema</a></li>
-        <li><a id="contacto-btn" href="acerca.html">Acerca</a></li>
-      </nav>
-    </section>
-  </div>
 
-  <div class="container">
+    <div class="container">
+      <div id="main" class="row">
+        <div class="one-half column left">
+          <object type="image/svg+xml" data="img/suelar.svg">
+            <h1>SuelAR</h1>
+          </object>
+          <p>
+            Proyecto <strong>SuelAR</strong> es una iniciativa desarrollada por
+            el Centro de Artes Digitales PUCV, en colaboración con la escuela de
+            ciencias del mar de nuestra casa de estudios y a petición de la
+            Asociación Salvemos Las Torpederas. Como tal, nace de la necesidad
+            de atender los requerimientos ciudadanos por reactivar y fortalecer
+            los espacios públicos como lugares de encuentro y aprendizaje.
+          </p>
+          <p>
+            En este sentido el proyecto <strong>SuelAR</strong> se compone de
+            dos instancias complementarias: Por un lado, es un mural emplazado
+            en la calzada oeste de la Avenida Altamirano, cuyo diseño y motivos
+            están inspirados por las especies marinas más características de
+            nuestra zona costera, que están pintados con formas y colores
+            llamativos, pensando en atraer a los niños; cuyo propósito es
+            constituirse en un hito de reconocimiento e identificación
+            territorial de la ciudadanía.
+          </p>
+          <p>
+            Por otro lado, <strong>SuelAR</strong> es también un juego
+            educativo, desarrollado como aplicación para teléfonos móviles
+            inteligentes con sistema operativo android, y que sólo se activa y
+            permite jugar en el emplazamiento del mural, es decir, es un juego
+            georeferenciado. El juego consiste en la inmersión de un buzo por
+            una ruta marina, que contiene las especies más características del
+            ecosistemamarino y en el cuál el buzo debe ir fotografiando para
+            completar su bitácora y tener un conocimiento más acabado de lo que
+            sucede bajo el mar, que por medio de la observación e interacción
+            pretende enseñar a los niños y niñas el valor del océano en nuestras
+            vidas.
+          </p>
+          <p>
+            En este sentido, el proyecto <strong>SuelAR</strong>, se caracteriza
+            por convocar tanto al arte como la ciencia, el ocio con el
+            conocimiento, la entretención con el aprendizaje y la tecnología con
+            la naturaleza, con la convicción de que hay que desarrollar
+            iniciativas que tengan en cuenta demandas territoriales, miradas
+            críticas de los saberes académicos y el uso de tecnologías de
+            vanguardia, que permitan involucrar a la Universidad con la
+            ciudadania.
+          </p>
 
-    <div id="main"
-      class="row">
-      <div class="one-half column left">
-        
-        <object type="image/svg+xml" data="img/suelar.svg">
-          <h1>SuelAR</h1>
-        </object>
-        <p>Proyecto <strong>SuelAR</strong> es una iniciativa desarrollada por el Centro de Artes Digitales PUCV, en colaboración con la escuela de ciencias del mar de nuestra casa de estudios y a petición de la Asociación Salvemos Las Torpederas. Como tal, nace de la necesidad de atender los requerimientos ciudadanos por reactivar y fortalecer los espacios públicos como lugares de encuentro y aprendizaje.</p>
-        <p>En este sentido el proyecto <strong>SuelAR</strong> se compone de dos instancias complementarias: Por un lado, es un mural emplazado en la calzada oeste de la Avenida Altamirano, cuyo diseño y motivos están inspirados por las especies marinas más características de nuestra zona costera, que están pintados con formas y colores llamativos, pensando en atraer a los niños; cuyo propósito es constituirse en un hito de reconocimiento e identificación territorial de la ciudadanía.</p>
-        <p>Por otro lado, <strong>SuelAR</strong> es también un juego educativo, desarrollado como aplicación para teléfonos móviles inteligentes con sistema operativo android, y que sólo se activa y permite jugar en el emplazamiento del mural, es decir, es un juego georeferenciado. El juego consiste en la inmersión de un buzo por una ruta marina, que contiene las especies más características del ecosistemamarino y en el cuál el buzo debe ir fotografiando para completar su bitácora y tener un conocimiento más acabado de lo que sucede bajo el mar, que por medio de la observación e interacción pretende enseñar a los niños y niñas el valor del océano en nuestras vidas.</p> 
-        <p>En este sentido, el proyecto <strong>SuelAR</strong>, se caracteriza por convocar tanto al arte como la ciencia, el ocio con el conocimiento, la entretención con el aprendizaje y la tecnología con la naturaleza, con la convicción de que hay que desarrollar iniciativas que tengan en cuenta demandas territoriales, miradas críticas de los saberes académicos y el uso de tecnologías de vanguardia, que permitan involucrar a la Universidad con la ciudadania.</p>
-        
-        <h3>Equipo Proyecto Suelar</h3>
-        <h4>Profesores</h4>
-        <li>Ramón Aldunate, Instituto de Arte</li>
-        <li>Herbert Spencer, Escuela de Arquitectura y Diseño</li>
-        <li>Paula Ruz Escuela de Ciencias del Mar</li>
-        
-        <h4>Alumnos y ex-alumnos</h4>
-        <li>Mayte Alé Instituto de Arte</li>
-        <li>Ayrton Pereira Escuela de Arquitectura y Diseño</li>
-        <li>Kevin Rojas Escuela de Ingeniería Informática</li>
-        <li>Paula Tobar Instituto de Arte</li>
-      </div>
-      <div class="one-half column right">
-      
-      <div class="center">
-        <img src="img/suelar_ilustracion.svg" alt="Dibujo del Suelar">
-      </div>
-        
-        <!-- 
+          <h3>Equipo Proyecto Suelar</h3>
+          <h4>Profesores</h4>
+          <li><strong>Ramón Aldunate</strong>, Instituto de Arte</li>
+          <li><strong>Herbert Spencer</strong>, Escuela de Arquitectura y Diseño</li>
+          <li><strong>Paula Ruz</strong>, Escuela de Ciencias del Mar</li>
+
+          <h4>Alumnos y ex-alumnos</h4>
+          <li><strong>Mayte Alé</strong>, Instituto de Arte</li>
+          <li><strong>Ayrton Pereira</strong>, Escuela de Arquitectura y Diseño</li>
+          <li><strong>Kevin Rojas</strong>, Escuela de Ingeniería Informática</li>
+          <li><strong>Paula Tobar</strong>, Instituto de Arte</li>
+        </div>
+        <div class="one-half column right">
+          <div class="center">
+            <img src="img/suelar_ilustracion.svg" alt="Dibujo del Suelar" />
+          </div>
+
+          <!-- 
         <div class="center">
           <img src="img/google-play.png" class="store-btn">
           <p>Descarga la app en Google Play</p>
         </div>
-        -->
-        
+        --></div>
       </div>
     </div>
-  </div>
 
-  <!-- End Document
+    <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
-
+  </body>
 </html>
