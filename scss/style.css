@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
 *
-*  Sitio de Francisco Méndez Labbe
-*  Diseño: Herbert Spencer González
+*    SuelAR - Valparaíso 2023
+*    CAD - Centro de Artes Digitales PUCV
 *
 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -988,7 +988,7 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
 .menu-wrap .hamburger > div {
   position: relative;
   width: 100%;
-  height: 2px;
+  height: 6px;
   background-color: #f3fffd;
   display: flex;
   align-items: center;
@@ -1001,7 +1001,7 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
   position: absolute;
   top: -13.3333333333px;
   width: 100%;
-  height: 2px;
+  height: 6px;
   background: inherit;
   box-shadow: 2px 2px 1px rgba(1, 49, 117, 0.5352);
 }
