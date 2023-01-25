@@ -24,6 +24,10 @@ body {
     background: linear-gradient(-20deg, #0067A1 0%, #01A6DE 35%, #6DCFF4 87%, #B1D8E7 100%);
 }
 
+em{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 canvas {
     overflow-x: hidden;
     touch-action: none;
