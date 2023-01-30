@@ -115,6 +115,20 @@ body {
     width: 100%;
 }
 .column{
+    ol.pasos{
+        li{
+            background-color: transparentize($color-blue, 0.5);
+            padding: 1rem;
+            border: 2px solid transparentize($color-dark , 0.2);
+            margin: 0 0 1em 0;
+            border-radius: 1ex;
+            box-shadow: $shadow;
+            list-style-type: decimal;
+            &::before{
+                content: none;
+            }
+        }
+    }
     li{
         // display: block;
         list-style-type: none;

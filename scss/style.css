@@ -1142,6 +1142,18 @@ body {
   width: 100%;
 }
 
+.column ol.pasos li {
+  background-color: rgba(0, 103, 161, 0.5);
+  padding: 1rem;
+  border: 2px solid rgba(1, 50, 118, 0.8);
+  margin: 0 0 1em 0;
+  border-radius: 1ex;
+  box-shadow: 2px 2px 1px rgba(1, 49, 117, 0.5352);
+  list-style-type: decimal;
+}
+.column ol.pasos li::before {
+  content: none;
+}
 .column li {
   list-style-type: none;
 }
