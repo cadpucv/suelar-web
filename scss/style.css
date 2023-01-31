@@ -1053,7 +1053,11 @@ body {
 }
 
 em {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Source Serif Pro", "Times New Roman", Times, serif;
+}
+
+strong {
+  font-weight: 900;
 }
 
 canvas {
@@ -1155,13 +1159,14 @@ body {
   content: none;
 }
 .column li {
-  list-style-type: none;
+  list-style-type: disclosure-closed;
 }
 .column li::before {
-  content: "→ ";
+  /* content: "→ ";*/
 }
 .column li::marker {
-  text-indent: -13px !important;
+  text-shadow: 2px 2px 1px rgba(1, 49, 117, 0.5352);
+  color: rgb(255, 255, 255);
 }
 
 object {
@@ -1216,7 +1221,7 @@ object {
 
 @media (min-width: 550px) {
   .right {
-    margin-top: 32rem;
+    margin-top: 17rem;
   }
   img.logo-puerto {
     margin: 11em 0;
