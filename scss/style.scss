@@ -24,13 +24,14 @@ body {
     background: linear-gradient(-20deg, #0067A1 0%, #01A6DE 35%, #6DCFF4 87%, #B1D8E7 100%);
 }
 
-em{
+em {
     font-family: 'Source Serif Pro', 'Times New Roman', Times, serif;
 }
 
-strong{
+strong {
     font-weight: 900;
 }
+
 canvas {
     overflow-x: hidden;
     touch-action: none;
@@ -40,36 +41,36 @@ img.store-btn {
     max-width: 70%;
 }
 
-.logo-pucv{
+.logo-pucv {
     display: inline-block;
     width: 50%;
     margin: 2em 0;
 }
 
-.logo-epv{
+.logo-epv {
     display: inline-block;
     width: 90%;
     margin: 4em 0;
 }
 
-.logo-stl{
+.logo-stl {
     display: inline-block;
     width: 70%;
     margin: 0;
 }
 
-.logo-cad{
+.logo-cad {
     margin: 2em 0 0 0;
     width: 95%;
     height: auto;
 }
 
-.sponsors{
+.sponsors {
     display: flex;
     align-items: center;
 }
 
-.activador{
+.activador {
     display: inline-block;
     border-radius: 50%;
     width: 70px;
@@ -78,11 +79,11 @@ img.store-btn {
     box-shadow: $shadow;
 }
 
-li{
+li {
     margin: 0 0 0 1.8em;
 }
 
-a.btn{
+a.btn {
     font-size: 1.3em;
     text-transform: uppercase;
     text-decoration: none;
@@ -94,7 +95,8 @@ a.btn{
     display: inline-block;
     padding: 0.5ex 1em;
     border-radius: 3ex;
-    &:hover{
+
+    &:hover {
         border: 2px solid white;
     }
 }
@@ -109,7 +111,7 @@ a.btn{
     }
 }
 
-h4{
+h4 {
     margin: 1em 0 0 0;
 }
 
@@ -117,9 +119,10 @@ body {
     min-height: 100vh;
     width: 100%;
 }
-.column{
-    ol.pasos{
-        li{
+
+.column {
+    ol.pasos {
+        li {
             background-color: transparentize($color-blue, 0.5);
             padding: 1rem;
             border: 2px solid transparentize($color-dark , 0.2);
@@ -127,23 +130,27 @@ body {
             border-radius: 1ex;
             box-shadow: $shadow;
             list-style-type: decimal;
-            &::before{
+
+            &::before {
                 content: none;
             }
         }
     }
-    li{
+
+    li {
         // display: block;
         list-style-type: disclosure-closed;
-         &::before{
+
+        &::before {
             /* content: "→ ";*/
-         }
-         &::marker{
-             text-shadow: $shadow;
-             color: rgb(255, 255, 255)
-         }
-     
-     }
+        }
+
+        &::marker {
+            text-shadow: $shadow;
+            color: rgb(255, 255, 255)
+        }
+
+    }
 
 }
 
@@ -206,10 +213,108 @@ object {
 }
 
 @media (min-width: 550px) {
-    .right{
+    .right {
         margin-top: 17rem;
     }
-    img.logo-puerto{
+
+    img.logo-puerto {
         margin: 11em 0;
     }
+}
+
+.grid-layout {
+
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+
+}
+
+.caja {
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
+    background-color: rgb(0, 89, 140, .5);
+    margin: .2rem;
+    text-align: center;
+    line-height: 150px;
+    float: left;
+
+
+}
+
+.thumbPNG {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    float: none;
+}
+
+.thumbPNGpeces {
+    width: 100px;
+    height: 40px;
+    margin: 0;
+    align-items: center;
+    float: none;
+}
+
+.boxl {
+    width: 50%;
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/img/gameplaypic.jpeg);
+    background-size: cover;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 3rem;
+    margin-block: 1rem;
+
+}
+
+
+.boxl:hover {
+    background-image: linear-gradient(rgba(134, 183, 255, .8), rgba(134, 183, 255, .2)), url(/img/gameplaypic.jpeg);
+    font-size: 3.5rem;
+
+
+}
+
+.boxr {
+    width: 50%;
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/img/Boton_wiki.png);
+    background-size: cover;
+    text-align: center;
+    line-height: 30rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 3rem;
+    margin-block: 1rem;
+
+}
+
+.boxr:hover {
+    background-image: linear-gradient(rgba(134, 183, 255, .88), rgba(134, 183, 255, .2)), url(/img/Boton_wiki.png);
+    font-size: 3.5rem;
+
+
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    line-height: 30rem;
+
+}
+
+.map {
+    border: 0;
+    height: 450px;
+    width: 95%;
 }
