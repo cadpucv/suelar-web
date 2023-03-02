@@ -419,6 +419,14 @@ th {
   box-sizing: border-box;
 }
 
+.mviewer {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
 .column,
 .columns {
   width: 100%;
@@ -1227,3 +1235,96 @@ object {
     margin: 11em 0;
   }
 }/*# sourceMappingURL=style.css.map */
+
+
+.grid-layout{
+  
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  
+
+}
+
+.caja{
+  width: 150px;
+  height: 150px;
+  border-radius: 6px;
+  background-color: rgb(0, 89, 140, .5);
+  margin: .2rem;
+  text-align: center;
+  line-height: 150px;
+  float: left;
+
+
+}
+
+.thumbPNG{
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  float: none;
+}
+
+.thumbPNGpeces{
+  width: 100px;
+  height: 40px;
+  margin: 0;
+  align-items: center;
+  float: none;
+}
+
+.boxl{
+width: 50%;
+height: 300px;
+background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)) , url(/img/gameplaypic.jpeg);
+background-size: cover;
+text-align: center;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+font-size: 3rem;
+margin-block: 1rem;
+
+}
+
+
+.boxl:hover{
+  background-image: linear-gradient(rgba(134, 183, 255, .8), rgba(134, 183, 255, .2)) , url(/img/gameplaypic.jpeg);
+  font-size: 3.5rem;
+
+  
+}
+
+.boxr{
+  width: 50%;
+  height: 300px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)) , url(/img/Boton_wiki.png);
+  background-size: cover;
+  text-align: center;
+  line-height: 30rem;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 3rem;
+  margin-block: 1rem;
+
+}
+
+.boxr:hover{
+  background-image: linear-gradient(rgba(134, 183, 255, .88), rgba(134, 183, 255, .2)) , url(/img/Boton_wiki.png);
+  font-size: 3.5rem;
+
+  
+}
+
+.box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  width: 95%;
+  height: 100%;
+  margin: auto  ;
+  line-height: 30rem;
+
+}
+
