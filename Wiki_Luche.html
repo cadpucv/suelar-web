@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+       <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8" />
+  <title>SuelaAR</title>
+  <meta name="description" content="" />
+  <meta name="author" content="CAD - Centro de Artes Digitales PUCV" />
+
+  <!-- Mobile Specific Metas
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- FONT (Adobe Futura)
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="scss/style.css" />
+
+  <!-- Favicon
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+
+  <!-- Scripts
+ –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="js/p5.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script> -->
+  <script src="js/fondo.js"></script>
+
+  <!-- model viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+</head>
+<body id="page">
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler" />
+        <div class="hamburger">
+          <div></div>
+        </div>
+        <section class="menu">
+          <nav id="main-nav">
+            <li><a id="home" href="index.html">SuelAR</a></li>
+            <li><a id="content" href="ecosistema.html">Ecosistema</a></li>
+            <li><a id="us" href="acerca.html">Nosotros</a></li>
+            <li><a id="privacy" href="privacidad.html">Privacidad</a></li>
+            <li><a id="wiki" href="wikikids.html">Wiki</a></li>
+          </nav>
+        </section>
+      </div>
+      <div class="container">
+        <div id="main"
+          class="row">
+          <div class="one-half column left">
+            <img src="PNG_especies/1 Algas rojas 1.png" class="thumbPNG">
+              <h1>Luche</h1>
+              
+         
+          </div>
+        </div>
+      </div>
+
+<div class="mviewer">
+
+  <model-viewer class="mviewer" src="models/Luche.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1.7" autoplay exposure="1.31" environment-image="legacy" shadow-softness="0.78" auto-rotate camera-orbit="-118.3deg 65.78deg 9.952m" field-of-view="30deg">
+   
+  </model-viewer>
+
+    
+        
+     
+    </div>
+
+    <div class="one-half column left">
+      <h2>Nombre Común</h2>
+      <p>Luche</p>
+
+      <h2>Nombre Científico</h2>
+      <p>Porphyra columbinap</p>
+
+      <h3>Breve descripción</h3>
+      <p>Es un alga roja comestible, se conforma principalmente de una lámina que presenta en variedades de formas; pueden ser planas, onduladas o crespas, membranosas y transparentes, suaves al tacto, flexibles y elásticas,. Sus colores van desde el rosado, violáceo, rojo verdoso a verde. Se consume en recetas de guisos, acompañada de verduras.Se puede ubicar en las profundidades, al límite de la zona de mareas y crece de forma abundante en primavera a lo largo del litoral chileno.</p>
+      
+      <h4>Profundidad máxima</h4>
+      <p>0-30 m</p>
+
+      <h4>Talla máxima</h4>
+      <p>10 cm</p>
+
+      <h4>Estado de conservación</h4>
+      <p>FP</p>
+
+      </div>
+</body>
+</html>
