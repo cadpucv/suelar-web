@@ -1306,4 +1306,12 @@ object {
   border: 0;
   height: 450px;
   width: 95%;
+}
+
+.mviewer {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  margin: 0 auto;
+  box-sizing: content-box;
 }/*# sourceMappingURL=style.css.map */
