@@ -1321,18 +1321,24 @@ object {
 
   font-size: 10px;
 
-  padding: auto;
+  padding: 1px;
   color: white;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break:normal;
+
+
+  word-break: normal;
   white-space: normal;
-  text-align: left;
-  align-items: top;
-  inline-size: 1px;
+  text-align: inherit;
+  justify-content: left;
+  align-items: center;
+line-height: 180%;
 
 }
 
 .Gameoption {
   color: white;
+  align-items: top;
+}
+
+a{
+  text-decoration: none;
 }
