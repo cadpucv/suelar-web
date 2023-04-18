@@ -1266,6 +1266,7 @@ object {
   border-bottom-left-radius: 20px;
   font-size: 3rem;
   margin-block: 1rem;
+
 }
 
 .boxl:hover {
@@ -1283,6 +1284,7 @@ object {
   border-bottom-right-radius: 20px;
   font-size: 3rem;
   margin-block: 1rem;
+
 }
 
 .boxr:hover {
@@ -1316,10 +1318,19 @@ object {
 }/*# sourceMappingURL=style.css.map */
 
 .description {
-  font-size: 12px;
-  position: relative;
+
+  font-size: 10px;
+
   padding: auto;
   color: white;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break:normal;
+  white-space: normal;
+  text-align: left;
+  align-items: top;
+  inline-size: 1px;
+
 }
 
 .Gameoption {
