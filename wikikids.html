@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-       <!-- Basic Page Needs
+  <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8" />
   <title>SuelaAR</title>
@@ -16,13 +17,12 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet" />
 
   <!-- CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="scss/style.css" />
 
   <!-- Favicon
@@ -39,184 +39,254 @@
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
 </head>
+
 <body id="page">
-    <div class="menu-wrap">
-        <input type="checkbox" class="toggler" />
-        <div class="hamburger">
-          <div></div>
-        </div>
-        <section class="menu">
-          <nav id="main-nav">
-            <li><a id="home" href="index.html">SuelAR</a></li>
-            <li><a id="content" href="ecosistema.html">Ecosistema</a></li>
-            <li><a id="us" href="acerca.html">Nosotros</a></li>
-            <li><a id="privacy" href="privacidad.html">Privacidad</a></li>
-            <li><a id="wiki" href="wikikids.html">Wiki</a></li>
-          </nav>
-        </section>
+  <nav class="navbar navbar-expand-lg" style="background-color: transparent;" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand nav-item-nk" href="index.html">
+        <img src="img/favicon.png" alt="Logo" width="30" height="30" class="d-inline-block">
+        SuelAR
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link nav-item-nk" href="ecosistema.html">Ecosistema</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-item-nk" href="acerca.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-item-nk" href="privacidad.html">Privacidad</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-item-nk" href="wikikids.html">Wiki</a>
+          </li>
+        </ul>
       </div>
+    </div>
+  </nav>
 
+  <div class="container">
+    <div id="main" class="row">
+      <div class="one-half column left">
+
+        <h1>Especies</h1>
+
+      </div>
       <div class="container">
-        <div id="main"
-          class="row">
-          <div class="one-half column left">
-            
-              <h1>Especies</h1>
-         
-          </div>
-          <div class="container">
-            <div class="one-half column right">
+        <div class="one-half column right">
 
-            </div>
-          </div>
-         
         </div>
-
-        <div class="grid-layout">
-           
-          <div class="caja">
-            <h4>Blanquillo</h4>
-              <a href="Wiki_Blanquillo.html" alt="Blanquillo" ><img src="PNG_especies/26. Blanquillo.png" class="thumbPNG"></a>
-        </div>
-  
-          <div class="caja">
-            <h4>Camarón Nailon</h4>
-            <a href="Wiki_Camaron.html" alt="Camarón Nailon" ><img src="PNG_especies/25 Camaron.png" class="thumbPNG"></a>
-          </div>
-
-          <div class="caja">
-            <h4>Caracol</h4>
-            <a href="Wiki_Caracol.html" alt="Caracol" ><img src="PNG_especies/11. Caracol.png" class="thumbPNG"></a>
-          </div>
-  
-          <div class="caja">
-            <h4>Chitón</h4>
-            <a href="Wiki_Chiton.html" alt="Chitón" ><img src="PNG_especies/30 Chiton.png" class="thumbPNG"></a>
-        </div>
-  
-          <div class="caja">
-            <h4>Cochayuyo</h4>
-            <a href="Wiki_Cochayuyo.html" alt="Cochayuyo" ><img src="PNG_especies/4. Cochayuyo.png" class="thumbPNG"></a>
-         </div>
-  
-         <div class="caja">
-          <h4>Congrio Colorado</h4>
-          <a href="Wiki_CongrioColorado.html" alt="Congrio Colorado" ><img src="PNG_especies/23. Congrio colorado.png" class="thumbPNGpeces"></a>
-       </div>
-  
-       
-       <div class="caja">
-        <h4>Congrio Dorado</h4>
-        <a href="Wiki_CongrioDorado.html" alt="Congrio Dorado" ><img src="PNG_especies/24. Congrio dorado.png" class="thumbPNGpeces"></a>
-     </div>
-  
-         <div class="caja">
-          <h4>Congrio Negro</h4>
-          <a href="Wiki_CongrioNegro.html" alt="Congrio Negro" ><img src="PNG_especies/25. Congrio negro.png" class="thumbPNGpeces"></a>
-       </div>
-  
-           <div class="caja">
-             <h4>Chorito</h4>
-              <a href="Wiki_Chorito.html" alt="Chorito" ><img src="PNG_especies/7 Molusco 1.png" class="thumbPNG"></a>
-           </div>
-  
-           <div class="caja">
-            <h4>Erizo Blanco</h4>
-             <a href="Wiki_ErizoB.html" alt="Erizo Blanco" ><img src="PNG_especies/16. Erizo blanco.png" class="thumbPNG"></a>
-          </div>
-  
-           <div class="caja">
-            <h4>Erizo Negro</h4>
-             <a href="Wiki_ErizoN.html" alt="Erizo Negro" ><img src="PNG_especies/28 Erizo.png" class="thumbPNG"></a>
-          </div>
-
-          <div class="caja">
-            <h4>Estrella Chica</h4>
-             <a href="Wiki_EstrellaC.html" alt="Estrella Chica" ><img src="PNG_especies/33 Estrella C.png" class="thumbPNG"></a>
-          </div>
-
-          <div class="caja">
-            <h4>Estrella Grande</h4>
-             <a href="Wiki_EstrellaG.html" alt="Estrella Grande" ><img src="PNG_especies/32 Estrella G.png" class="thumbPNG"></a>
-          </div>
-
-          <div class="caja">
-            <h4>Huiro</h4>
-             <a href="Wiki_Huiro.html" alt="Huiro" ><img src="PNG_especies/5 Alga verde.png" class="thumbPNG"></a>
-          </div>
-
-          <div class="caja">
-            <h4>Jaiba Marmola</h4>
-             <a href="Wiki_JaibaMarmola.html" alt="Jaiba Marmola" ><img src="PNG_especies/3 Jaiba 1.png" class="thumbPNG"></a>
-          </div>
-
-          <div class="caja">
-            <h4>Jaiba Mora</h4>
-             <a href="Wiki_JaibaMora.html" alt="Jaiba Mora" ><img src="PNG_especies/4 Jaiba 2.png" class="thumbPNG"></a>
-          </div>
-
-          <div class="caja">
-            <h4>Lapa</h4>
-             <a href="Wiki_Lapa.html" alt="Lapa" ><img src="PNG_especies/13. Lapa.png" class="thumbPNG"></a>
-          </div>
-
-          <div class="caja">
-            <h4>Lechuga de Mar</h4>
-             <a href="Wiki_Lechuga.html" alt="Lechuga de Mar" ><img src="PNG_especies/0 Alga verde.png" class="thumbPNG"></a>
-          </div>
-
-          <div class="caja">
-            <h4>Loco</h4>
-             <a href="Wiki_Loco.html" alt="Loco" ><img src="PNG_especies/27 Loco.png" class="thumbPNG"></a>
-          </div>
-
-          <div class="caja">
-            <h4>Luche</h4>
-             <a href="Wiki_Luche.html" alt="Luche" ><img src="PNG_especies/1 Algas rojas 1.png" class="thumbPNG"></a>
-          </div>
-  
-          <div class="caja">
-            <h4>Pejesapo</h4>
-             <a href="Wiki_Pejesapo.html" alt="Pejesapo" ><img src="PNG_especies/16 Pez 9.png" class="thumbPNG"></a>
-          </div>
-
-          <div class="caja">
-            <h4>Pingüino</h4>
-             <a href="Wiki_Pinguino.html" alt="Pingüino" ><img src="PNG_especies/38 Pinguino.png" class="thumbPNG"></a>
-          </div>
-
-          <div class="caja">
-            <h4>Pintacha</h4>
-             <a href="Wiki_Pintacha.html" alt="Pintacha" ><img src="PNG_especies/27. Pintacha.png" class="thumbPNGpeces"></a>
-          </div>
-
-          <div class="caja">
-            <h4>Piure</h4>
-             <a href="Wiki_Piure.html" alt="Piure" ><img src="PNG_especies/26 Piure.png" class="thumbPNG"></a>
-          </div>
-
-          <div class="caja">
-            <h4>Pulga de Mar</h4>
-             <a href="Wiki_Pulga.html" alt="Pulga de Mar" ><img src="PNG_especies/24 Pulga.png" class="thumbPNG"></a>
-          </div>
-
-          <div class="caja">
-            <h4>Sol de Mar</h4>
-             <a href="Wiki_SoldeMar.html" alt="Sol de Mar" ><img src="PNG_especies/31 Sol de mar.png" class="thumbPNG"></a>
-          </div>
-
-          <div class="caja">
-            <h4>Tomollo</h4>
-             <a href="Wiki_Tomollo.html" alt="Tomollo" ><img src="PNG_especies/28. Tomollo.png" class="thumbPNGpeces"></a>
-          </div>
-
       </div>
-    
 
+    </div>
+
+    <div class="grid-layout">
+
+      <a href="Wiki_Blanquillo.html" alt="Blanquillo">
+        <div class="caja">
+          <h4>Blanquillo</h4>
+          <img src="PNG_especies/26. Blanquillo.png" class="thumbPNG">
         </div>
+      </a>
+
+      <a href="Wiki_Camaron.html" alt="Camarón Nailon">
+        <div class="caja">
+          <h4>Camarón Nailon</h4>
+          <img src="PNG_especies/25 Camaron.png" class="thumbPNG">
+        </div>
+      </a>
+
+      <a href="Wiki_Caracol.html" alt="Caracol">
+        <div class="caja">
+          <h4>Caracol</h4>
+          <img src="PNG_especies/11. Caracol.png" class="thumbPNG">
+        </div>
+      </a>
+
+      <a href="Wiki_Chiton.html" alt="Chitón">
+        <div class="caja">
+          <h4>Chitón</h4>
+          <img src="PNG_especies/30 Chiton.png" class="thumbPNG">
+        </div>
+      </a>
+
+      <a href="Wiki_Cochayuyo.html" alt="Cochayuyo">
+        <div class="caja">
+          <h4>Cochayuyo</h4>
+          <img src="PNG_especies/4. Cochayuyo.png" class="thumbPNG">
+        </div>
+      </a>
+
+      <a href="Wiki_CongrioColorado.html" alt="Congrio Colorado">
+        <div class="caja">
+          <h4>Congrio Colorado</h4>
+          <img src="PNG_especies/23. Congrio colorado.png" class="thumbPNGpeces">
+        </div>
+      </a>
+
+
+      <a href="Wiki_CongrioDorado.html" alt="Congrio Dorado">
+        <div class="caja">
+          <h4>Congrio Dorado</h4>
+          <img src="PNG_especies/24. Congrio dorado.png" class="thumbPNGpeces">
+        </div>
+      </a>
+
+      <a href="Wiki_CongrioNegro.html" alt="Congrio Negro">
+        <div class="caja">
+          <h4>Congrio Negro</h4>
+          <img src="PNG_especies/25. Congrio negro.png" class="thumbPNGpeces">
+        </div>
+      </a>
+
+      <a href="Wiki_Chorito.html" alt="Chorito">
+        <div class="caja">
+          <h4>Chorito</h4>
+          <img src="PNG_especies/7 Molusco 1.png" class="thumbPNG">
+        </div>
+      </a>
+
+      <a href="Wiki_ErizoB.html" alt="Erizo Blanco">
+        <div class="caja">
+          <h4>Erizo Blanco</h4>
+          <img src="PNG_especies/16. Erizo blanco.png" class="thumbPNG">
+        </div>
+      </a>
+
+      <a href="Wiki_ErizoN.html" alt="Erizo Negro">
+        <div class="caja">
+          <h4>Erizo Negro</h4>
+          <img src="PNG_especies/28 Erizo.png" class="thumbPNG">
+        </div>
+      </a>
+
+      <a href="Wiki_EstrellaC.html" alt="Estrella Chica">
+        <div class="caja">
+          <h4>Estrella Chica</h4>
+          <img src="PNG_especies/33 Estrella C.png" class="thumbPNG">
+        </div>
+      </a>
+
+      <a href="Wiki_EstrellaG.html" alt="Estrella Grande">
+        <div class="caja">
+          <h4>Estrella Grande</h4>
+          <img src="PNG_especies/32 Estrella G.png" class="thumbPNG">
+        </div>
+      </a>
+
+      <a href="Wiki_Huiro.html" alt="Huiro">
+        <div class="caja">
+          <h4>Huiro</h4>
+          <img src="PNG_especies/5 Alga verde.png" class="thumbPNG">
+        </div>
+      </a>
+
+      <a href="Wiki_JaibaMarmola.html" alt="Jaiba Marmola">
+        <div class="caja">
+          <h4>Jaiba Marmola</h4>
+          <img src="PNG_especies/3 Jaiba 1.png" class="thumbPNG">
+        </div>
+      </a>
+
+      <a href="Wiki_JaibaMora.html" alt="Jaiba Mora">
+        <div class="caja">
+          <h4>Jaiba Mora</h4>
+          <img src="PNG_especies/4 Jaiba 2.png" class="thumbPNG">
+        </div>
+      </a>
+
+      <a href="Wiki_Lapa.html" alt="Lapa">
+        <div class="caja">
+          <h4>Lapa</h4>
+          <img src="PNG_especies/13. Lapa.png" class="thumbPNG">
+        </div>
+      </a>
+
+      <a href="Wiki_Lechuga.html" alt="Lechuga de Mar">
+        <div class="caja">
+          <h4>Lechuga de Mar</h4>
+          <img src="PNG_especies/0 Alga verde.png" class="thumbPNG">
+        </div>
+      </a>
+
+      <a href="Wiki_Loco.html" alt="Loco">
+        <div class="caja">
+          <h4>Loco</h4>
+          <img src="PNG_especies/27 Loco.png" class="thumbPNG">
+        </div>
+      </a>
+
+      <a href="Wiki_Luche.html" alt="Luche">
+        <div class="caja">
+          <h4>Luche</h4>
+          <img src="PNG_especies/1 Algas rojas 1.png" class="thumbPNG">
+        </div>
+      </a>
+
+      <a href="Wiki_Pejesapo.html" alt="Pejesapo">
+        <div class="caja">
+          <h4>Pejesapo</h4>
+          <img src="PNG_especies/16 Pez 9.png" class="thumbPNG">
+        </div>
+      </a>
+
+      <a href="Wiki_Pinguino.html" alt="Pingüino">
+        <div class="caja">
+          <h4>Pingüino</h4>
+          <img src="PNG_especies/38 Pinguino.png" class="thumbPNG">
+        </div>
+      </a>
+
+      <a href="Wiki_Pintacha.html" alt="Pintacha">
+        <div class="caja">
+          <h4>Pintacha</h4>
+          <img src="PNG_especies/27. Pintacha.png" class="thumbPNGpeces">
+        </div>
+      </a>
+
+      <a href="Wiki_Piure.html" alt="Piure">
+        <div class="caja">
+          <h4>Piure</h4>
+          <img src="PNG_especies/26 Piure.png" class="thumbPNG">
+        </div>
+      </a>
+
+      <a href="Wiki_Pulga.html" alt="Pulga de Mar">
+        <div class="caja">
+          <h4>Pulga de Mar</h4>
+          <img src="PNG_especies/24 Pulga.png" class="thumbPNG">
+        </div>
+      </a>
+
+      <a href="Wiki_SoldeMar.html" alt="Sol de Mar">
+        <div class="caja">
+          <h4>Sol de Mar</h4>
+          <img src="PNG_especies/31 Sol de mar.png" class="thumbPNG">
+        </div>
+      </a>
+
+      <a href="Wiki_Tomollo.html" alt="Tomollo">
+        <div class="caja">
+          <h4>Tomollo</h4>
+          <img src="PNG_especies/28. Tomollo.png" class="thumbPNGpeces">
+        </div>
+      </a>
+
+    </div>
+
+
+  </div>
 
 
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
