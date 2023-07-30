@@ -1257,6 +1257,10 @@ object {
 }
 
 .boxl {
+display: block;
+white-space: normal;
+line-height: 1.3rem;
+
   width: 50%;
   height: 300px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/img/gameplaypic.jpeg);
@@ -1274,16 +1278,20 @@ object {
 }
 
 .boxr {
+  display: block;
+white-space: normal;
+line-height: 1.3rem;
+
   width: 50%;
   height: 300px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/img/Boton_wiki.png);
   background-size: cover;
   text-align: center;
-  line-height: 30rem;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   font-size: 3rem;
   margin-block: 1rem;
+  
 }
 
 .boxr:hover {
@@ -1300,6 +1308,7 @@ object {
   height: 100%;
   margin: auto;
   line-height: 30rem;
+  
 }
 
 .map {
@@ -1319,3 +1328,12 @@ object {
 .nav-item-nk {
   color: white;
 }/*# sourceMappingURL=style.css.map */
+
+
+
+.description{
+
+  font-size: 1rem;
+  text-align: left;
+}
+
