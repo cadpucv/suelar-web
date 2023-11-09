@@ -1,174 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap"
+            rel="stylesheet"
+        />
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>SuelaAR</title>
-  <meta name="description"
-    content="">
-  <meta name="author"
-    content="CAD - Centro de Artes Digitales PUCV">
+        <title>SuelAR</title>
+        <!-- Start Single Page Apps for GitHub Pages -->
+        <script type="text/javascript">
+            // Single Page Apps for GitHub Pages
+            // MIT License
+            // https://github.com/rafgraph/spa-github-pages
+            // This script checks to see if a redirect is present in the query string,
+            // converts it back into the correct url and adds it to the
+            // browser's history using window.history.replaceState(...),
+            // which won't cause the browser to attempt to load the new url.
+            // When the single page app is loaded further down in this file,
+            // the correct url will be waiting in the browser's history for
+            // the single page app to route accordingly.
+            (function (l) {
+                if (l.search[1] === "/") {
+                    var decoded = l.search
+                        .slice(1)
+                        .split("&")
+                        .map(function (s) {
+                            return s.replace(/~and~/g, "&");
+                        })
+                        .join("?");
+                    window.history.replaceState(
+                        null,
+                        null,
+                        l.pathname.slice(0, -1) + decoded + l.hash,
+                    );
+                }
+            })(window.location);
+        </script>
+        <!-- End Single Page Apps for GitHub Pages -->
+    </head>
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1">
-
-  <!-- FONT (Adobe Futura)
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="preconnect"
-    href="https://fonts.googleapis.com">
-  <link rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&family=Source+Serif+Pro:ital@1&display=swap" rel="stylesheet">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="stylesheet"
-    href="scss/style.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon"
-    type="image/png"
-    href="img/favicon.png">
-
-  <!-- Scripts
-   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="js/p5.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script> -->
-  <script src="js/fondo.js"></script>
-
-</head>
-
-<body id="page">
-
-  <nav class="navbar navbar-expand-lg" style="background-color: transparent;" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand nav-item-nk" href="index.html">
-        <img src="img/favicon.png" alt="Logo" width="30" height="30" class="d-inline-block">
-        SuelAR
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link nav-item-nk" href="ecosistema.html">Ecosistema</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-item-nk" href="acerca.html">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-item-nk" href="privacidad.html">Privacidad</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-item-nk" href="wikikids.html">Wiki</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container">
-    <div id="main">
-     
-        <object type="image/svg+xml"
-          data="img/suelar.svg" class="row">
-          <h1>SuelAR</h1>
-        </object>
-
-
-      </div>
-      </div>
-    </div>
-   
-    <div class="container">
-    
-    
-
-      <p><strong>SuelAR</strong> es un mural pintado en la calzada oeste de Avenida Altamirano que ilustra 
-        las especies más característica de nuestro ecosistema marino presente en la región, desde este lugar con 
-        un activador presente en la pintura nos trasladamos a un juego de realidad aumentada, que pretende educar 
-        y fortalecer el conocimiento sobre la vida marina de nuestros niños/as y jóvenes.</p>
-    </div>
-
-    <div class="container box textfix">
-
-      <button  class="boxl" >
-        <a href="ARindex.html">
-      <div class="container">
-      
-       <h2 class="Gameoption">Juego</h2>
-        <p class="description">Juego de Realidad Virtual 
-          para dispositivos compatibles con "Google AR"</p>
-
-      </div>
-    </a>
-
-      </button>
-
-   
-      <button  class="boxr">
-        <a href="wikikids.html">
-        <div class="container">
-
-        <h2 class="Gameoption">Wiki</h2>
-        <p class="description">Información y visualización de especies 3D</p>
-        
-      </div>
-    </a>
-      </button>
-   
-  </div>
-    
-  <div class="container box">
-    <h2>Ubicación</h2>
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d867.0775989907929!2d-71.64367673353222!3d-33.02136558176802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689e6bf56277e6d%3A0x2a8807807b997d8c!2sAltamirano%2022240%2C%20Valpara%C3%ADso!5e0!3m2!1sen!2scl!4v1677794741825!5m2!1sen!2scl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-
-
-<div class="container">
-    
-    <div class="row sponsors">
-      <div class="one-third column center">
-        <object type="image/svg+xml"
-          class="logo-epv"
-          data="img/logo-epv.svg"
-          title="Empresa Portuaria Valparaíso"> 
-        </object>
-      </div>
-
-      <div class="one-third column center">
-        <object type="image/svg+xml"
-          class="logo-pucv"
-          data="img/logo-pucv.svg"
-          title="Pontificia Universidad Católica de Valparaíso">
-        </object>
-      </div>
-
-      <div class="one-third column center">
-        <object type="image/svg+xml"
-          class="logo-stl"
-          data="img/logo-stl.svg"
-          title="Salvemos Torpederas">
-        </object>
-      </div>
-    </div>
-  
-
-    </div>
-
-
-  <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</body>
-
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.tsx"></script>
+    </body>
 </html>
+
